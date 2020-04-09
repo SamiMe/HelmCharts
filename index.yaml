@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  helm-yml-templating:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2020-04-09T11:37:45.493488279+03:00"
+    description: Template files to helm charts.
+    digest: 8bb9e0ae89718e6ce68f598379e008bcce8306f5be39fe055b70c8864390fb3b
+    name: helm-yml-templating
+    type: application
+    urls:
+    - helm-yml-templating-1.0.0.tgz
+    version: 1.0.0
+generated: "2020-04-09T11:37:45.493237134+03:00"
