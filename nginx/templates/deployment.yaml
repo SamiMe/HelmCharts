@@ -5,8 +5,8 @@ metadata:
   labels:
     run: service-a
   name: service-a
-data:
-  myvalue: "GoCD build counter 0"
+#data:
+#  myvalue: "GoCD build counter 0"
 spec:
   replicas: 1
   selector:
