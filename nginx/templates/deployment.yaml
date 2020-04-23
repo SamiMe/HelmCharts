@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: service-a
+  name: service-a
+data:
+  myvalue: "GoCD build counter 0"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+       run: service-a
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: service-a
+    spec:
+      containers:
+      - image: artifactory.groke.eficode.io/groke-docker/servicea:test
+        name: service-a
+        ports:
+          - name: http
+            containerPort: 80
+            protocol: TCP
