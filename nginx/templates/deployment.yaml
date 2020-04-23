@@ -19,7 +19,7 @@ spec:
         run: service-a
     spec:
       containers:
-      - image: artifactory.groke.eficode.io/groke-docker/servicea:test
+      - image: nginx
         name: service-a
         ports:
           - name: http
